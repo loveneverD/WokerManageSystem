@@ -6,18 +6,18 @@
 
 Employee::Employee(int id, string name, int dId) {
     this->m_ID = id;
-    this->m_Name = move(name); // å¯¹äºŽä½¿ç”¨ä¸€æ¬¡çš„å˜é‡é€šè¿‡moveå°±å¯ä»¥ç§»åŠ¨è€Œä¸æ˜¯æ‹·è´
+    this->m_Name = move(name); // ¶ÔÓÚÊ¹ÓÃÒ»´ÎµÄ±äÁ¿Í¨¹ýmove¾Í¿ÉÒÔÒÆ¶¯¶ø²»ÊÇ¿½±´
     this->m_DeptID = dId;
 }
 
 void Employee::ShowInfo() {
-    cout << "èŒå·¥ç¼–å·ï¼š " << this->m_ID
-        << " \tèŒå·¥å§“åï¼š " << this->m_Name
-        << " \tå²—ä½ï¼š" << this->getDeptName()
-        << " \tå²—ä½èŒè´£ï¼šå®Œæˆç»ç†äº¤ç»™çš„ä»»åŠ¡" << endl;
+    cout << "Ö°¹¤±àºÅ£º " << this->m_ID
+        << " \tÖ°¹¤ÐÕÃû£º " << this->m_Name
+        << " \t¸ÚÎ»£º" << this->getDeptName()
+        << " \t¸ÚÎ»Ö°Ôð£ºÍê³É¾­Àí½»¸øµÄÈÎÎñ" << endl;
 }
 
 string Employee::getDeptName() {
-    return {"å‘˜å·¥"};
+    return {"Ô±¹¤"};
 }
 

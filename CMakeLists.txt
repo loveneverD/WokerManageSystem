@@ -10,4 +10,7 @@ add_executable(WokerManageSystem
         employee.h
         employee.cpp
         manager.h
-        manager.cpp)
+        manager.cpp
+        boss.h
+        boss.cpp
+        main.cpp)

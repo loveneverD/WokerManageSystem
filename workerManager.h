@@ -1,19 +1,30 @@
 #pragma once
 #include <iostream>
+#include "worker.h"
 using namespace std;
 
 class WorkerManager{
 public:
-    // æ„é€ å‡½æ•°
+    // ¹¹Ôìº¯Êı
     WorkerManager();
 
-    // å±•ç¤ºèœå•
+    // Õ¹Ê¾²Ëµ¥
     void Show_menu();
 
-    // é€€å‡ºç³»ç»Ÿ
+    // ÍË³öÏµÍ³
     void exitSystem();
 
-    // ææ„å‡½æ•°
+    // Îö¹¹º¯Êı
     ~WorkerManager();
+
+    // ¼ÇÂ¼ÎÄ¼şÖĞÈËÊı
+    int m_EmpNum;
+
+    // Ô±¹¤Êı×éµÄÖ¸Õë
+    Worker ** m_EmpArray;
+
+    // Ìí¼ÓÔ±¹¤
+    void Add_Emp();
+
 
 };
