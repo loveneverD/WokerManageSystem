@@ -55,6 +55,18 @@ build CMakeFiles/WokerManageSystem.dir/workerManager.cpp.obj: CXX_COMPILER__Woke
   OBJECT_DIR = CMakeFiles\WokerManageSystem.dir
   OBJECT_FILE_DIR = CMakeFiles\WokerManageSystem.dir
 
+build CMakeFiles/WokerManageSystem.dir/employee.cpp.obj: CXX_COMPILER__WokerManageSystem_unscanned_Debug C$:/Users/lc/CLionProjects/WokerManageSystem/employee.cpp || cmake_object_order_depends_target_WokerManageSystem
+  DEP_FILE = CMakeFiles\WokerManageSystem.dir\employee.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\WokerManageSystem.dir
+  OBJECT_FILE_DIR = CMakeFiles\WokerManageSystem.dir
+
+build CMakeFiles/WokerManageSystem.dir/manager.cpp.obj: CXX_COMPILER__WokerManageSystem_unscanned_Debug C$:/Users/lc/CLionProjects/WokerManageSystem/manager.cpp || cmake_object_order_depends_target_WokerManageSystem
+  DEP_FILE = CMakeFiles\WokerManageSystem.dir\manager.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\WokerManageSystem.dir
+  OBJECT_FILE_DIR = CMakeFiles\WokerManageSystem.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target WokerManageSystem
@@ -63,7 +75,7 @@ build CMakeFiles/WokerManageSystem.dir/workerManager.cpp.obj: CXX_COMPILER__Woke
 #############################################
 # Link the executable WokerManageSystem.exe
 
-build WokerManageSystem.exe: CXX_EXECUTABLE_LINKER__WokerManageSystem_Debug CMakeFiles/WokerManageSystem.dir/workerManager.cpp.obj
+build WokerManageSystem.exe: CXX_EXECUTABLE_LINKER__WokerManageSystem_Debug CMakeFiles/WokerManageSystem.dir/workerManager.cpp.obj CMakeFiles/WokerManageSystem.dir/employee.cpp.obj CMakeFiles/WokerManageSystem.dir/manager.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\WokerManageSystem.dir
